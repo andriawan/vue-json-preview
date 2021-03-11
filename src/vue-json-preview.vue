@@ -112,14 +112,14 @@ export default /*#__PURE__*/ Vue.extend({
     :class="[viewer_theme, position_style]"
   >
     <div class="display-status" @click="toggleDisplay">
-      <p>
+      <button>
         {{ label_display }}
-      </p>
+      </button>
     </div>
     <div :class="class_theme" @click="toggleTheme">
-      <p>
+      <button>
         {{ label_display_theme }}
-      </p>
+      </button>
     </div>
     <div v-if="is_display_maximize">
       <template v-if="Array.isArray(data)">
@@ -143,45 +143,66 @@ export default /*#__PURE__*/ Vue.extend({
 <style scoped>
 .display-status {
   display: inline-block;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  border-radius: 0.3rem;
-  background-color: #dd6b20;
   position: sticky;
-  color: #e2e8f0;
   top: 0;
   right: 0;
 }
 
-#json-viewer-container p {
-  margin: 0;
+.display-status button {
+  font-family: monospace;
+  background: transparent;
+  background-color: #dd6b20;
+  outline: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.3rem;
+  color: #e2e8f0;
+  border: none;
   padding: 0.5rem;
 }
 
 .display-theme-dark {
   display: inline-block;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  border-radius: 0.3rem;
-  background-color: #1d1d1d;
   position: sticky;
-  color: #e2e8f0;
   margin-left: 0.3rem;
   top: 0;
   right: 0;
 }
 
-.display-theme-light {
-  display: inline-block;
+.display-theme-dark button {
+  cursor: pointer;
+  font-family: monospace;
+  outline: none;
+  background: transparent;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 0.3rem;
-  background-color: #ffffff;
+  color: #e2e8f0;
+  background-color: #1d1d1d;
+  border: none;
+  padding: 0.5rem;
+}
+
+.display-theme-light {
+  display: inline-block;
   position: sticky;
-  color: #2d3748;
   margin-left: 0.3rem;
   top: 0;
   right: 0;
+}
+
+.display-theme-light button {
+  cursor: pointer;
+  font-family: monospace;
+  outline: none;
+  background: transparent;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.3rem;
+  color: #2d3748;
+  background-color: #ffffff;
+  border: none;
+  padding: 0.5rem;
 }
 
 .display-theme-dark:hover,
@@ -189,7 +210,7 @@ export default /*#__PURE__*/ Vue.extend({
   cursor: pointer;
 }
 
-.display-status:hover {
+.display-status button:hover {
   background-color: #fda467;
   cursor: pointer;
 }
