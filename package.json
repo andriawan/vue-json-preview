@@ -1,7 +1,7 @@
 {
   "name": "vue-json-preview",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "debug json data in ease and fast",
   "main": "dist/vue-json-preview.ssr.js",
   "browser": "dist/vue-json-preview.esm.js",
   "module": "dist/vue-json-preview.esm.js",
@@ -20,9 +20,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-  "dependencies": {
-    "git-commit-msg-linter": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
