@@ -106,7 +106,11 @@ export default /*#__PURE__*/ Vue.extend({
 </script>
 
 <template>
-  <div ref="viewer" :class="[viewer_theme, position_style]">
+  <div
+    id="json-viewer-container"
+    ref="viewer"
+    :class="[viewer_theme, position_style]"
+  >
     <div class="display-status" @click="toggleDisplay">
       <p>
         {{ label_display }}
@@ -122,14 +126,14 @@ export default /*#__PURE__*/ Vue.extend({
         <template v-for="(item, index) in data">
           <div :class="object_theme" :key="index">
             <div>{{ item.constructor.name }}</div>
-            {{ JSON.stringify(item, null, 4) }}
+            <div>{{ JSON.stringify(item, null, 4) }}</div>
             <br />
           </div>
         </template>
       </template>
       <template v-else>
         <div :class="object_theme">
-          {{ JSON.stringify(data, null, 4) }}
+          <div>{{ JSON.stringify(data, null, 4) }}</div>
         </div>
       </template>
     </div>
@@ -147,6 +151,11 @@ export default /*#__PURE__*/ Vue.extend({
   color: #e2e8f0;
   top: 0;
   right: 0;
+}
+
+#json-viewer-container p {
+  margin: 0;
+  padding: 0.5rem;
 }
 
 .display-theme-dark {

@@ -1,6 +1,6 @@
 {
   "name": "vue-json-preview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "debug json data in ease and fast",
   "homepage": "https://github.com/andriawan/vue-json-preview#readme",
   "keywords": [
@@ -65,6 +65,6 @@
     "vue": "^2.6.12"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=10"
   }
 }

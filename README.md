@@ -16,14 +16,17 @@ Debug json data in ease and fast
 </template>
 <script>
 
+import VueJsonPreview from "vue-json-preview";
+
 export default {
   data() {
     return {
-      value: 1
+      data: ["linux", "windows", "osx", "solaris"],
+      position: "BOTTOM_RIGHT"
     }
   },
   components: {
-    VueRangeSlider
+    VueJsonPreview
   }
 }
 </script>
