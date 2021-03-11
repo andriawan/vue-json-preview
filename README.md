@@ -56,3 +56,7 @@ export default {
 ## License
 
 [MIT](LICENSE)
+
+## Contributions
+
+If you find issue or bug please refer to [issue section](https://github.com/andriawan/vue-json-preview/issue). If you think this needs couple improvements please discuss and send PR.
