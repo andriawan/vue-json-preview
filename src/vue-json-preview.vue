@@ -126,14 +126,14 @@ export default /*#__PURE__*/ Vue.extend({
         <template v-for="(item, index) in data">
           <div :class="object_theme" :key="index">
             <div>{{ item.constructor.name }}</div>
-            <div>{{ JSON.stringify(item, null, 4) }}</div>
+            <div class="json-data">{{ JSON.stringify(item, null, 4) }}</div>
             <br />
           </div>
         </template>
       </template>
       <template v-else>
         <div :class="object_theme">
-          <div>{{ JSON.stringify(data, null, 4) }}</div>
+          <div class="json-data">{{ JSON.stringify(data, null, 4) }}</div>
         </div>
       </template>
     </div>
@@ -236,14 +236,17 @@ export default /*#__PURE__*/ Vue.extend({
 .viewer-dark,
 .viewer-light {
   padding: 0.9rem;
-  white-space: pre;
-  font-family: monospace;
   border-radius: 0.5rem;
   position: fixed;
   margin: 1rem;
   max-height: 20rem;
   max-width: 40rem;
   overflow: auto;
+}
+
+.json-data {
+  white-space: pre;
+  font-family: monospace;
 }
 
 .viewer-bottom-right {
