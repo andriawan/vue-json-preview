@@ -6,11 +6,16 @@ Debug json data in ease and fast
 
 ![Alt Text](https://github.com/andriawan/vue-json-preview/blob/master/demo.gif)
 
+## Demo
+
+[demo](https://codesandbox.io/s/vue-json-preview-demo-9dvlt)
+
 ## Todo
 
-- [] Auto hide when env is Production
-- [] Flexible styling
-- [] Default theme variant
+- [ ] Auto hide when env is Production
+- [ ] Flexible styling
+- [ ] Default theme variant
+- [ ] Copy button for each single object in Array
   
 ## Install
 
@@ -59,4 +64,4 @@ export default {
 
 ## Contributions
 
-If you find issue or bug please refer to [issue section](https://github.com/andriawan/vue-json-preview/issue). If you think this needs couple improvements please discuss and send PR.
+If you find issue or bug please refer to [issue section](https://github.com/andriawan/vue-json-preview/issues). If you think this needs couple improvements please discuss and send PR.
