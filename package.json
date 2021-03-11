@@ -2,6 +2,14 @@
   "name": "vue-json-preview",
   "version": "0.0.1",
   "description": "debug json data in ease and fast",
+  "homepage": "https://github.com/andriawan/vue-json-preview#readme",
+  "keywords": [
+    "vue",
+    "json",
+    "preview",
+    "lib"
+  ],
+  "license": "MIT",
   "main": "dist/vue-json-preview.ssr.js",
   "browser": "dist/vue-json-preview.esm.js",
   "module": "dist/vue-json-preview.esm.js",
@@ -12,6 +20,17 @@
     "vue-json-preview.d.ts",
     "src/**/*.vue"
   ],
+  "author": {
+    "name": "Muhammad Irwan Andriawan",
+    "email": "irwan@andriawan.com"
+  },
+  "bugs": {
+    "url": "https://github.com/andriawan/vue-json-preview/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andriawan/vue-json-preview.git"
+  },
   "sideEffects": false,
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
